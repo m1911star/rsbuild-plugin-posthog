@@ -1,6 +1,9 @@
 import { defineConfig } from '@rsbuild/core';
-import { pluginExample } from '../src';
+import { pluginPosthog } from '../src';
 
 export default defineConfig({
-  plugins: [pluginExample()],
+  plugins: [pluginPosthog({
+    apiHost: 'xxxx',
+    apiKey: 'xxxx'
+  })],
 });
