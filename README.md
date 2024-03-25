@@ -1,10 +1,10 @@
-# rsbuild-plugin-example
+# rsbuild-plugin-posthog
 
-rsbuild-plugin-example is a Rsbuild plugin to do something.
+rsbuild-plugin-posthof is a Rsbuild plugin for Posthog.
 
 <p>
   <a href="https://npmjs.com/package/rsbuild-plugin-example">
-   <img src="https://img.shields.io/npm/v/rsbuild-plugin-example?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
+   <img src="https://img.shields.io/npm/v/rsbuild-plugin-posthog?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
   </a>
     <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
 </p>
@@ -14,17 +14,20 @@ rsbuild-plugin-example is a Rsbuild plugin to do something.
 Install:
 
 ```bash
-npm add rsbuild-plugin-example -D
+npm add rsbuild-plugin-posthog -D
 ```
 
 Add plugin to your `rsbuild.config.ts`:
 
 ```ts
 // rsbuild.config.ts
-import { pluginExample } from 'rsbuild-plugin-example';
+import { pluginPosthog } from 'rsbuild-plugin-posthog';
 
 export default {
-  plugins: [pluginExample()],
+  plugins: [pluginPosthog({
+    apiKey: 'xxx',
+    apiHost: 'xxxx'
+  })],
 };
 ```
 
@@ -32,10 +35,10 @@ export default {
 
 Here are the available options:
 
-| Name | Type      | Description      | Defaults    |
-| ---- | --------- | ---------------- | ----------- |
-| foo  | `string`  | Some description | `undefined` |
-| bar  | `boolean` | Some description | `false`     |
+| Name | Type      |
+| ---- | --------- |
+| apiKey  | `string`  |
+| apiHost  | `boolean` |
 
 ## License
 

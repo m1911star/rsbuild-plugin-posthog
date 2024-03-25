@@ -12,9 +12,13 @@ export const pluginPosthog = ({
   name: 'rsbuild-plugin-posthog',
 
   setup(api) {
-    if (!id) {
+    if (!apiKey) {
+      throw new Error('[rsbuild-plugin-posthog] Posthog api key is required!');
+    }
+
+    if (!apiHost) {
       throw new Error(
-        '[rsbuild-plugin-google-analytics] Google tag ID is required!',
+        '[rsbuild-plugin-posthog] Posthog instance address is required!',
       );
     }
 

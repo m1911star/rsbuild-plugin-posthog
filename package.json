@@ -1,5 +1,5 @@
 {
-  "name": "rsbuild-plugin-example",
+  "name": "rsbuild-plugin-posthog",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -14,7 +14,7 @@
       "default": "./dist/index.js"
     }
   },
-  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-template",
+  "repository": "https://github.com/m1911star/rsbuild-plugin-posthog",
   "files": [
     "dist"
   ],
