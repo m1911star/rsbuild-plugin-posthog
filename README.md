@@ -1,6 +1,6 @@
 # rsbuild-plugin-posthog
 
-rsbuild-plugin-posthof is a Rsbuild plugin for Posthog.
+rsbuild-plugin-posthog is a Rsbuild plugin for Posthog.
 
 <p>
   <a href="https://npmjs.com/package/rsbuild-plugin-example">
@@ -38,7 +38,7 @@ Here are the available options:
 | Name | Type      |
 | ---- | --------- |
 | apiKey  | `string`  |
-| apiHost  | `boolean` |
+| apiHost  | `string` |
 
 ## License
 
